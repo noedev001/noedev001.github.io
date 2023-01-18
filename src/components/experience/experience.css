@@ -1,0 +1,148 @@
+.title {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    user-select: none;
+}
+
+.experience__container>div {
+    padding: 0rem 1rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+
+.experience__container>div h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.cards {
+    background: var(--color-primary-variant);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.cards img {
+    width: 80px;
+    height: 80px;
+}
+
+.cards:hover {
+    border: 1px solid transparent;
+    animation: habilidades 1s both;
+    filter: drop-shadow(0 10px 10px var(--color-primary));
+    background: var(--color-bg)
+}
+
+@keyframes habilidades {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container>div {
+        padding: 0rem 0rem;
+    }
+
+    .experience__container>div h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .experience__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+
+    .cards img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cards:hover {
+        border: 1px solid transparent;
+        animation: habilidades 1s both;
+        filter: drop-shadow(0 10px 10px var(--color-primary));
+        background: var(--color-bg)
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+
+
+    .experience__container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .experience__container>div {
+        padding: 0;
+        transition: var(--transition);
+    }
+
+
+    .experience__container>div h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .experience__content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        padding: 0 0.4rem 0 0.4rem;
+    }
+
+    .cards {
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .cards img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: -0.2rem;
+    }
+
+    .cards h4 {
+        font-size: 0.9rem;
+    }
+
+}

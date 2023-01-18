@@ -1,0 +1,146 @@
+.title {
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    user-select: none;
+}
+
+:root {
+    --swiper-theme-color: var(--color-primary) !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: #000;
+}
+
+.conten-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+}
+
+.imagen {
+    margin: 2rem 0rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 75%;
+    border-radius: 2rem;
+}
+
+.detalles {
+    margin: 3.5rem 2rem 3.5rem 0rem;
+}
+
+.detalles h4 {
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.detalles p {
+    text-align: left;
+}
+
+.detalles a {
+    float: left;
+    margin-top: 2rem;
+}
+
+.icon-repo {
+    font-size: 1.5rem;
+    margin: 0rem 0rem -0.3rem 0rem;
+}
+
+
+@media screen and (max-width: 620px) {
+    .conten-portfolio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imagen {
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .imagen img {
+        width: 65%;
+        border-radius: 1rem;
+    }
+
+
+    .detalles {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+    .detalles h4 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .detalles p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .detalles a {
+        float: none;
+        margin-top: 1rem;
+        margin-bottom: 2.2rem;
+        font-size: 1rem;
+
+    }
+
+    .icon-repo {
+        font-size: 1.2rem;
+        margin: 0rem 0rem -0.3rem 0rem;
+    }
+
+}
